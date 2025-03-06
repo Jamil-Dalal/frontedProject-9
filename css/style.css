@@ -1,0 +1,152 @@
+body{
+     font-family: "Roboto", serif;
+     box-sizing: border-box;
+}
+.robot{
+    font-family:  "Roboto", serif !important
+}
+.head-txt{font-family: "Oswald", serif;}
+.caption{
+    background-color: #1e1f2096 !important;
+}
+a:hover{
+    opacity: 0.7;
+}
+.nav-bar{
+    z-index: 10;
+}
+.ai:hover{ color: black;}
+.gradient-text {
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(2, 82, 255), rgb(0, 157, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.gradient-text-blue {color: #4582f4 ;}
+.card{
+    position: relative !important;
+}
+.card-befor-after::before{
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute !important;
+    background-color: #639bfb !important;
+    z-index: 10;
+}
+.aft{
+    opacity: 1;
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #4582f455;
+    z-index: 5;
+    transition: all 1s;
+}
+.bef{
+    opacity: 1;
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #4582f445;
+    z-index: 5;
+    transition: all 1s;
+}
+.card:hover .bef {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -1;
+}
+.card:hover .aft {
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    z-index: -1;
+}
+.person{
+    transform: scale(1);
+    height: 70vh;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+.backimge1{background-image: url(../images/smoky.png);background-repeat: no-repeat;background-position:right ;background-size: cover;}
+.backimge2{background-image: url(../images/person2.png);background-repeat: no-repeat;background-position:center ;background-size: cover;}
+.backimge3{background-image: url(../images/abuarab.png);background-repeat: no-repeat;background-position: center;background-size: cover;}
+
+.person:hover{
+    transform: scale(0.85);
+}
+.person:hover .per{
+    background-color: #011a4881 !important;
+}
+.person h4 {transition: all 0.5s;}
+.person:hover h4{
+    padding-top: 2rem;
+}
+.news-img{  
+clip-path: polygon(8% 0, 100% 0, 100% 100%, 14% 100%);  
+background-image: url(../images/Toyota\ Hilux\ .png);   
+background-repeat: no-repeat;   
+background-position: left;  
+background-size: 100%;  
+transition: all 0.5s !important;
+}
+.news-img2{  clip-path: polygon(8% 0, 100% 0, 100% 100%, 14% 100%);  }
+.news-img3 {clip-path: polygon(0 0, 91% 0, 82% 100%, 0 100%);} 
+.bb{
+    border-radius: 20px;
+}
+
+.card1:hover .prog{
+    width: 20% !important;
+}
+.card1:hover .news-img{
+    background-size: 120%;
+}
+.card1 img {transition: all 0.5s;}
+.card1:hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.card1 .btn{
+    font-size: 18px !important;
+}
+.c-btn{
+    color: #ffbb89;
+}
+.c-btn:hover{
+    background-color: #f5a972;
+    color: white ;
+}
+.c-btn2{color: #00c3ff;}
+.c-btn2:hover{   background-color: #00a2ff; color: white ;}
+.c-btn3{color: #ff6f6a;}.c-btn3:hover{background-color: #d8163b;; color: white ;}
+.c-btn4{color: #f1d03d;}.c-btn4:hover{background-color: #f1d03d;; color: white ;}
+.prog{
+    background-color: #ee985a !important;
+}
+
+@media (max-width : 992px) {
+    .news-img2 ,.news-img3{clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);height: 60vh;}
+    .leftnav{
+        top: 35% !important;
+        z-index: 9 !important;
+    }
+    .c-nav{
+        padding-bottom: 1rem !important;
+    }
+    html{
+        font-size: 14px;
+    }
+    .fixedimag{
+        height: 30vh !important;
+    }
+}
+

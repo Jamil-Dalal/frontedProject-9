@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body class="position-relative">
+
+  <div class=" sticky-top nav-bar p-0 c-nav " style=" opacity:1 ; background-color: rgba(255, 255, 255,0.8); width: 100%; ">
+    <nav class="navbar navbar-expand-lg navbar-light p-0  ">
+      <div class="container-fluid  ">
+        <a class="navbar-brand" href="#"><img src="images/jimmyrentlogo2.png" class="rounded-circle"
+            style="width: 80px; height: 80px;"></a>
+        <span class="gradient-text display-6 border-end px-2">Jimy Rent</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle border border-1 border-primary rounded-2 gradient-text " href="#"
+                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cars
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-primary" href="#">luxary</a></li>
+                <li><a class="dropdown-item text-primary" href="#">Super</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item text-primary" href="#">Sport</a></li>
+                <li><a class="dropdown-item text-primary" href="#">SUV</a></li>
+                <li><a class="dropdown-item text-primary" href="#">Busnies</a></li>
+
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#" tabindex="-1">About</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control c-form me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn mx-2 btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              login
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- <div class="container-fluid bg-white" style="height: 85px;"></div> -->
+  <div class="leftnav position-fixed end-0  z-3 top-50 translate-middle-y text-primary "
+    style="z-index: 20; right: 3%  !important ; ">
+    <p> <a href="" class ="ai" >   <i class="fa-brands   fa-square-facebook display-5 "></i></a></p>
+    <p> <a href="" class ="ai"  ><i class="fa-brands  fa-square-instagram display-5 "></i></a> </p>
+    <p> <a href="" class ="ai"  ><i class="fa-brands  fa-square-x-twitter display-5 "></i></a> </p>
+    <p> <a href="" class ="ai"  ><i class="fa-brands  fa-linkedin display-5 "></i></a> </p>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-primary">
+          <h5 class="modal-title head-txt" id="exampleModalLabel">login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-2">
+            <label for="exampleFormControlInput1" class="form-label text-primary ">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <label for="exampleFormControlInput1" class="form-label text-secondary">we will not tile any body about
+              you</label>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-12 col-form-label text-primary">Password</label>
+
+            <div class="col-sm-12">
+              <input type="password" class="form-control" id="inputPassword">
+            </div>
+          </div>
+          <div class="form-check form-switch m-2">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label text-primary" for="flexSwitchCheckDefault">Remmember me</label>
+          </div>
+          <div class="modal-footer  justify-content-between">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="row"> -->
+
+  <div class="col-12">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <!--  -->
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="images/car-showroom11-scaled.jpg" class="d-block w-100" style="height: 89vh;" alt="...">
+          <div class="carousel-caption caption text-white   d-md-block ">
+            <h5 class="m-4 text display-6 head-txt">Lexus at Jimy Rent</h5>
+            <p class="w-75 mx-auto">Make every moment on the road unforgettable with a Lexus
+              
+              .</p>
+            <a class="btn btn-primary">Rent now</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/car-showroom2.jpg" class="d-block w-100" style="height: 89vh;" alt="...">
+          <div class="carousel-caption caption text-white d-md-block">
+            <h5 class="m-4 text display-6 head-txt"> SUV Collection</h5>
+            <p class="w-75 mx-auto">Explore our SUV collection at
+              Jimy Rent 
+              </p>
+            <a class="btn btn-primary">Rent now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/car-showroom3.jpg" class="d-block w-100" style="height: 89vh;" alt="...">
+          <div class="carousel-caption caption text-white d-md-block">
+            <h5 class="m-4 text display-6 head-txt"> Supercars </h5>
+            <p class="w-75 mx-auto"> supercar
+              at Jimy Rent. </p>
+            <a class="btn btn-primary">Rent now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/hen-yehuda-asdd.jpg" class="d-block w-100" style="height: 89vh;" alt="...">
+          <div class="carousel-caption caption text-white d-md-block">
+            <h5 class="m-4 text display-6 head-txt">the  Luxury 
+            </h5>
+            <p class="w-75 mx-auto"> the ultimate in luxury
+              Book your dream
+              car today</p>
+            <a class="btn btn-primary">Rent now</a>
+          </div>
+        </div>
+      </div>
+
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon btn  btn-primary" aria-hidden="true"></span>
+        <span class="visually-hidden btn-primary">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon btn btn-primary" aria-hidden="true"></span>
+        <span class="visually-hidden btn ">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- </div> -->
+  <!-- </div> -->
+  <div class="card w-100">
+    <div class="card-body ps-4">
+      <h5 class="card-title display-6 gradient-text py-2 ">welcom to Jimy rent</h5>
+      <p class="card-text">We offer a premium car rental experience with a
+        diverse fleet of luxury cars, SUVs, and supercars. Enjoy exceptional
+        service, convenient booking, and reliable vehicles. Thank you for choosing Jimy Rent.
+        We look forward to making your journey extraordinary!</p>
+      <a href="#" class="btn btn-primary ">Rent now !</a>
+    </div>
+  </div>
+
+  <div class="py-5 pt-2 mt-2 border border-1 container-fluid rounded-2">
+    <div class="container-fluid p-5 text-center   rounded-3 my-3 " style="background-color:#0086fe29 ;">
+      <span class="display-5 fs-2    text-primary  text-capitalize fw-bold ">Jimmy Rent's Supercar Collection</span>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            <span class="gradient-text-blue fw-bold fs-5">BMW M4</span>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+
+            <strong>Feel the power of precision engineering with the BMW M4.</strong>
+            This iconic
+            sports car boasts exceptional agility, cutting-edge technology, and a design that commands attention.
+            Perfect for those who crave the thrill of speed and sophistication.
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <span class="gradient-text-blue fw-bold fs-5">Toyota Supra</span>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>The Toyota Supra is a legend reborn.</strong>
+            With its sleek, aerodynamic lines and heart-pounding performance, this car delivers an exhilarating ride.
+            Ideal for drivers who seek a blend of heritage and modern innovation.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <span class="gradient-text-blue fw-bold fs-5">Mercedes-Benz G-Class</span>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Embrace the extraordinary with the Mercedes-Benz G-Class.</strong>
+            This luxury SUV combines rugged capability with opulent comfort,
+            making it the perfect choice for any adventure.
+            Experience unparalleled style and power both on and off the road.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" px-2  border border-1 pt-1"> <!-- tecnical support -->
+    <div class="container-fluid py-3 text-center rounded  rounded-5 mt-3  mb-0 " style="background-color:#0086fe29 ; ">
+      <span class="display-5     text-capitalize fs-2    text-primary  text-capitalize fw-bold  ">All day service 24/7 <i
+          class="fa-regular fa-clock"></i></span>
+    </div>
+    <div class="form px-3 py-5 bg-light " style="background-color:#0086fe29 ;">
+      <p class="text-black" style="font-size: large;">Sent a messeg to the <span class="fs-6 text-primary  text-capitalize fw-bold  robot "
+          style="font-weight: bold;">Technical Support</span> </p>
+      <!-- Button trigger modal -->
+
+
+      <a tabindex="0" class="btn btn-primary active po my-2 mb-3 " role="button" data-bs-trigger="focus" aria-pressed="true"
+        data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-container="body" data-bs-placement="right"
+        data-bs-content="your massage sented">Sent</a>
+
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Technical Support</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              your massage sented to Technical Support
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class=" px-2  border border-1 pt-1 "> <!-- tecnical support -->
+    <div class="container-fluid py-3 text-center rounded  rounded-5 mt-0  mb-0 " style="background-color:#0086fe29 ; ">
+      <span class="fs-2 text-primary  text-capitalize fw-bold  text-capitalize ">Trader Office
+      </span>
+    </div>
+    <div class="form px-3 py-5 bg-light " style="background-color:#0086fe29 ;">
+      <p class="text-black" style="font-size: large;">Sent a messeg to the <span class="fs-6 text-primary  text-capitalize fw-bold robot "
+          style="font-weight: bold;">Trader Office</span> </p>
+      <!-- Button trigger modal -->
+
+
+      <a tabindex="0" class="btn btn-primary active po my-2 mb-3 " role="button" data-bs-trigger="focus" aria-pressed="true"
+        data-bs-toggle="modal" data-bs-target="#exampleModal3" data-bs-container="body" data-bs-placement="right"
+        data-bs-content="your massage sented">Sent</a>
+
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Trader Office </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              your massage sented to the Trader Office
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">enter your massage</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class=" px-2 border border-1 pt-1"> <!-- tecnical support -->
+    <div class="container-fluid py-3 text-center rounded  rounded-5 mt-0  mb-0 " style="background-color:#0086fe29 ; ">
+      <span class="display-5  fs-2 text-primary  text-capitalize fw-bold   text-capitalize ">The main rent Office
+      </span>
+    </div>
+    <div class="form px-3 py-5 bg-light " style="background-color:#0086fe29 ;">
+      <p class="text-black" style="font-size: large;">Sent a messeg to the <span class="fs-6 text-primary  text-capitalize fw-bold robot "
+          style="font-weight: bold;">The main rent Office</span> </p>
+      <!-- Button trigger modal -->
+
+
+      <a tabindex="0" class="btn btn-primary active po my-2 mb-3  " role="button" data-bs-trigger="focus" aria-pressed="true"
+        data-bs-toggle="modal" data-bs-target="#exampleModal4" data-bs-container="body" data-bs-placement="right"
+        data-bs-content="your massage sented">Sent</a>
+
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">The main rent Office </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              your massage sented to The main rent Office
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">enter your massage</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="pt-4  border border-2">
+    <div class="container-fluid fixedimag rounded rounded-4" style="height: 50vh; 
+   background-image:url(images/palestin.png) ; background-repeat: no-repeat;
+   background-attachment: fixed; background-size: cover; background-position: center;"></div>
+
+  </div>
+  <div class="container-fluid p-2 text-center rounded rounded-4  mt-2 mb-1 " style="background-color:#0086fe29 ; ">
+    <span class="fs-1 text-primary  text-capitalize fw-bold  text-capitalize ">discover the exclusiv cars</span>
+  </div>
+
+  <div class="row container-fluid mx-auto mt-5">
+    <div class="col-lg-4 mx-auto col-sm-12 mb-4">
+      <div class="card  mx-auto card-befor-after shadow-lg" style="width: 80%;">
+        <img src="images/raly.png" class="card-img-top img-thumbnail" alt="...">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="card-title m-0">Sky Line</h4> <a href="#" class="btn btn-primary">Rent Now!</a>
+          </div><!-- flex -->
+          <p class="card-text">Experience unparalleled luxury and performance with the cutting-edge Skyline, redefining
+            sophistication on the road</p>
+
+        </div>
+        <div class="aft"></div>
+        <div class="bef"></div>
+
+      </div>
+    </div>
+    <div class="col-lg-4 mx-auto col-sm-12 mb-4">
+      <div class="card  mx-auto card-befor-after shadow-lg" style="width: 80%;">
+        <img src="images/G-class.png" class="card-img-top img-thumbnail" alt="...">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="card-title m-0">G-class</h4> <a href="#" class="btn btn-primary">Rent Now!</a>
+          </div><!-- flex -->
+          <p class="card-text">Embrace uncompromising luxury and strength with the G-Class, the ultimate symbol of power
+            and sophistication.</p>
+
+        </div>
+        <div class="aft"></div>
+        <div class="bef"></div>
+      </div>
+    </div>
+    <div class="col-lg-4 mx-auto col-sm-12 mb-4">
+      <div class="card  mx-auto card-befor-after shadow-lg" style="width: 80%;">
+        <img src="images/RR.png" class="card-img-top img-thumbnail" alt="...">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="card-title m-0">rolls-royce</h4> <a href="#" class="btn btn-primary">Rent Now!</a>
+          </div><!-- flex -->
+          <p class="card-text">Indulge in the pinnacle of luxury and elegance with a Rolls-Royce, where timeless
+            craftsmanship meets high performance.</p>
+
+        </div>
+        <div class="aft"></div>
+        <div class="bef"></div>
+      </div>
+    </div>
+    <div class="col-lg-4 mx-auto col-sm-12 mb-4">
+      <div class="card  mx-auto card-befor-after shadow-lg" style="width: 80%;">
+        <img src="images/a white BMW M4 with small blue touches in a garage2.png." class="card-img-top img-thumbnail"
+          alt="...">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="card-title m-0">BMW M-4</h4> <a href="#" class="btn btn-primary">Rent Now!</a>
+          </div><!-- flex -->
+          <p class="card-text">Experience pure exhilaration in the BMW M4—where unmatched performance and timeless elegance converge.</p>
+
+        </div>
+        <div class="aft"></div>
+        <div class="bef"></div>
+      </div>
+    </div>
+    <div class="col-lg-4 mx-auto col-sm-12 mb-4">
+      <div class="card  mx-auto card-befor-after shadow-lg" style="width: 80%;">
+        <img src="images/white BMW M4 with blue touches in a garage.png" class="card-img-top img-thumbnail" alt="...">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="card-title m-0">BMW M-4</h4> <a href="#" class="btn btn-primary">Rent Now!</a>
+          </div><!-- flex -->
+          <p class="card-text">Unleash the power of the customized BMW M4—where unparalleled performance meets bespoke styling.</p>
+
+        </div>
+        <div class="aft"></div>
+        <div class="bef"></div>
+      </div>
+    </div>
+    <div class="col-lg-4 mx-auto col-sm-12 mb-4">
+      <div class="card  mx-auto card-befor-after shadow-lg" style="width: 80%;">
+        <img src="images/black BMW M4 with green touches in a garage.png" class="card-img-top img-thumbnail" alt="...">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="card-title m-0">BMW M-4</h4> <a href="#" class="btn btn-primary">Rent Now!</a>
+          </div><!-- flex -->
+          <p class="card-text">Command the streets in the iconic Black BMW M4—where precision meets unparalleled style.</p>
+
+        </div>
+        <div class="aft"></div>
+        <div class="bef"></div>
+      </div>
+    </div>
+    <div class="col-lg-4 mx-auto col-sm-12 mb-4">
+      <div class="card  mx-auto card-befor-after shadow-lg" style="width: 80%;">
+        <img src="images/BMW M4 sport car.png" class="card-img-top img-thumbnail" alt="...">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="card-title m-0">BMW M-5</h4><a href="#" class="btn btn-primary">Rent Now!</a>
+          </div><!-- flex -->
+          <p class="card-text">Discover the elegance and performance of the BMW 5 
+            Series—where cutting-edge technology meets sophisticated style."
+          </p>
+
+        </div>
+        <div class="aft"></div>
+        <div class="bef"></div>
+      </div>
+    </div>
+    <div class="col-lg-4 mx-auto col-sm-12 mb-4">
+      <div class="card  mx-auto card-befor-after shadow-lg" style="width: 80%;">
+        <img src="images/lampo.png" class="card-img-top img-thumbnail" alt="...">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="card-title m-0">Lambo</h4> <a href="#" class="btn btn-primary">Rent Now!</a>
+          </div><!-- flex -->
+          <p class="card-text">Experience the ultimate thrill in the sleek and powerful
+            Lamborghini Sports Car—where luxury meets performance.</p>
+
+        </div>
+        <div class="aft"></div>
+        <div class="bef"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fixedimag container-fluid  my-5 rounded rounded-4" style="height: 50vh; 
+  background-image:url(images/black\ BMW\ M4\ \ .png) ; background-repeat: no-repeat;
+  background-attachment: fixed; background-size: cover; background-position: center;"></div>
+  <div class="container-fluid text-center p-3 " style="background-color: #0086fe29;">
+    <h2 class="fs-1 text-primary  text-capitalize fw-bold  display-5">Professional Editors Team </h2>
+  </div>
+  <!-- ------------------------------- -->
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-lg-4 col-12 mb-5 ">
+        <div class="person backimge1 position-relative">
+          <div class="position-absolute p-3 pb-4 d-flex flex-column justify-content-between  z-1 w-100 h-100 per"
+            style="background: linear-gradient(to bottom, rgba(17, 23, 48, 0.707), rgba(99, 98, 98, 0.7)); border-radius: 20px;">
+            <div class="container text-white mt-3 p-4 ">
+              <h4 class="">All thanks for Smoky Nagata</h4>
+              <span><i class="fa-regular fa-clock"></i> FEB 26,2,2025</span>
+            </div>
+            <div class="container">
+              <img src="images/smoky.png" width="120rem" class="rounded-circle border border-3   " height="170rem"
+                alt="soryy">
+              <p class="text-white">Smoky Nagata <br>
+                Toyota supra founder</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12 mb-5 ">
+        <div class="person backimge2 position-relative">
+          <div class="position-absolute p-3 pb-4 d-flex flex-column justify-content-between  z-1 w-100 h-100 per"
+            style="background: linear-gradient(to bottom, rgba(17, 23, 48, 0.707), rgba(99, 98, 98, 0.7)); border-radius: 20px;">
+            <div class="container text-white mt-3 p-4 ">
+              <h4 class="">All thanks for Akira Nakai </h4>
+              <span><i class="fa-regular fa-clock"></i> FEB 26,2,2025</span>
+            </div>
+            <div class="container">
+              <img src="images/person2.png" width="120rem" class="rounded-circle border border-3   " height="170rem"
+                alt="soryy">
+              <p class="text-white">Akira Nakai <br>
+                founder of RAUH-Welt BEGRIFF (RWB)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12 mb-5 ">
+        <div class="person backimge3 position-relative">
+          <div class="position-absolute p-3 pb-4 d-flex flex-column justify-content-between  z-1 w-100 h-100 per"
+            style="background: linear-gradient(to bottom, rgba(17, 23, 48, 0.707), rgba(99, 98, 98, 0.7)); border-radius: 20px;">
+            <div class="container text-white mt-3 p-4 ">
+              <h4 class="">All thanks for Abu 3rab</h4>
+              <span><i class="fa-regular fa-clock"></i> OCT 7,10,2023</span>
+            </div>
+            <div class="container">
+              <img src="images/abuarab.png" width="120rem" class="rounded-circle border border-3   " height="170rem"
+                alt="soryy">
+              <p class="text-white">Abu 3rab <br>
+                Desert Eagle 4x4 </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- <div class="container">
+    <div class="card mb-3 w-100 shadow-lg card1 overflow-hidden" style="border-radius: 20px;   ">
+      <div class=" p-0 g-5  col-12  d-flex justify-content-between w-100  flex-wrap-reverse   " style="height: 75vh;">
+        <div class="col-xl-8  col-sm-12">
+          <div class="card-body  d-flex flex-column h-100 justify-content-between py-5 " style="border-radius: 20px;">
+
+            <div class="up">
+              <h3 class="card-title " style="color: #ee985a; ">Desert Eagle: The Ultimate Off-Road Beast </h3>
+              <p class=""><i class="fa-solid fa-calendar-days"></i> sat-oct 7th 2023</p>
+
+              <div class="progress bg-transparent my-3 " style="height: 0.5rem;">
+                <div class="progress-bar prog " role="progressbar" style="width: 10%" aria-valuenow="10"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <p class="card-text text  " style="font-size: 18px; ">The "Desert Eagle" edition of the 4x4
+                Toyota Hilux, modified by Abu Arab, is engineered to conquer
+                the toughest terrains. With an upgraded suspension, reinforced
+                chassis, and turbocharged engine, it excels in off-road and sand
+                dune adventures. Its rugged build includes reinforced bumpers and
+                all-terrain tires for maximum durability. Advanced off-road features like a custom-built snorkel
+                and integrated winch ensure preparedness for any situation.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+
+            <div class="bouttom">
+              <button type="button" class="btn btn-secondary"><i class="fa-regular fa-hand-peace"></i> vectory
+                club</button>
+              <button type="button" class="btn btn-secondary"><i class="fa-solid fa-play"></i> Teaser video</button>
+              <button type="button " class="btn btn-secondary c-btn"><i class="fa-solid fa-handshake"></i> Rent
+                now</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xl-4 news-img  col-sm-12 ">
+
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- <div class="container">
+    <div class="card shadow-lg card1 mb-3" style="width: 100%;">
+      <div class="row flex-wrap-reverse  g-0">
+
+        <div class="col-lg-8  col-sm-12">
+          <div class="card-body  d-flex flex-column h-100 justify-content-between py-5 " style="border-radius: 20px;">
+
+            <div class="up">
+              <h3 class="card-title " style="color: #ee985a; ">Desert Eagle: The Ultimate Off-Road Beast </h3>
+              <p class=""><i class="fa-solid fa-calendar-days"></i> sat-oct 7th 2023</p>
+
+              <div class="progress bg-transparent my-3 " style="height: 0.5rem;">
+                <div class="progress-bar prog " role="progressbar" style="width: 10%" aria-valuenow="10"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <p class="card-text text  " style="font-size: 16px; ">The "Desert Eagle" edition of the 4x4
+                Toyota Hilux, modified by Abu Arab, is engineered to conquer
+                the toughest terrains. With an upgraded suspension, reinforced
+                chassis, and turbocharged engine, it excels in off-road and sand
+                dune adventures. Its rugged build includes reinforced bumpers and
+                all-terrain tires for maximum durability. Advanced off-road features like a custom-built snorkel
+                and integrated winch ensure preparedness for any situation.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+
+            <div class="bouttom d-flex    ">
+              <button type="button" class="btn btn-secondary "><i class="fa-regular fa-hand-peace "></i> vectory
+              </button>
+              <button type="button" class="btn btn-secondary mx-2"><i class="fa-solid fa-play"></i> video</button>
+              <button type="button " class="btn btn-secondary c-btn"><i class="fa-solid fa-handshake"></i> Rent
+                now</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4 news-img col-sm-12 ">
+          <img src="images/Toyota Hilux .png" class="img-fluid news-img h-100 rounded-end" alt="...">
+
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container mt-5"> 
+    <div class="card shadow-lg card1 mb-3" style="width: 100%;background: linear-gradient(to top, #ee985a2e, white);">
+      <div class="row flex-wrap-reverse  g-0">
+
+        <div class="col-lg-8  col-sm-12">
+          <div class="card-body  d-flex flex-column h-100 justify-content-between py-5 " style="border-radius: 20px;">
+
+            <div class="up">
+              <h3 class="card-title " style="color: #ee985a; ">Desert Eagle: The Ultimate Off-Road Beast </h3>
+              <p class=""><i class="fa-solid fa-calendar-days"></i> sat-oct 7th 2023</p>
+
+              <div class="progress bg-transparent my-3 " style="height: 0.5rem;">
+                <div class="progress-bar prog " role="progressbar" style="width: 10%" aria-valuenow="10"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <p class="card-text text  " style="font-size: 16px; ">The "Desert Eagle" edition of the 4x4
+                Toyota Hilux, modified by Abu Arab, is engineered to conquer
+                the toughest terrains. With an upgraded suspension, reinforced
+                chassis, and turbocharged engine, it excels in off-road and sand
+                dune adventures. Its rugged build includes reinforced bumpers and
+                all-terrain tires for maximum durability. Advanced off-road features like a custom-built snorkel
+                and integrated winch ensure preparedness for any situation.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+
+            <div class="bouttom d-flex    ">
+              <button type="button" class="btn btn-secondary "><i class="fa-regular fa-hand-peace "></i> vectory
+              </button>
+              <button type="button" class="btn btn-secondary mx-2"><i class="fa-solid fa-play"></i> video</button>
+              <button type="button " class="btn btn-secondary c-btn"><i class="fa-solid fa-handshake"></i> Rent
+                now</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4 news-img2 overflow-hidden col-sm-12 ">
+          <img src="images/Toyota Hilux .png" class="img-fluid w-100 h-100 rounded-end" alt="...">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="card card1  mb-3 shadow-lg" style="width: 100%; background: linear-gradient(to top,#0b8ad32e,white); ">
+      <div class="row   g-0">
+        <div class="col-lg-4 news-img3 overflow-hidden col-sm-12 ">
+
+          <img src="images/skyline3.png" class="img-fluid  w-100 h-100 rounded-end" alt="...">
+
+        </div>
+        <div class="col-lg-8  col-sm-12">
+          <div class="card-body  d-flex flex-column h-100 justify-content-between py-5 " style="border-radius: 20px;">
+
+            <div class="up">
+              <h3 class="card-title " style="color: #0b8ad3; ">Nissan Skyline GT-R for Rent at Jimmy Rent </h3>
+              <p class=""><i class="fa-solid fa-calendar-days"></i> sat-oct 7th 2023</p>
+
+              <div class="progress bg-transparent my-3 " style="height: 0.5rem;">
+                <div class="progress-bar prog " role="progressbar"
+                  style="width: 10% ;background-color: #0b8ad3 !important" aria-valuenow="10" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+
+              <p class="card-text text  " style="font-size: 16px; ">The Nissan
+                Skyline GT-R is a high-performance sports car with a 2.6L twin-turbocharged
+                engine, delivering 280 PS and 37.5 kg·m of torque. It features a 5-speed manual
+                transmission and all-wheel drive, ensuring an exhilarating driving experience. Available
+                for rent at Jimmy Rent, this iconic car offers a blend of performance, design, and comfort,
+                making it a perfect choice for car enthusiasts.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+
+            <div class="bouttom d-flex    ">
+              <button type="button" class="btn btn-secondary "><i class="fa-regular fa-hand-peace "></i> vectory
+              </button>
+              <button type="button" class="btn btn-secondary mx-2"><i class="fa-solid fa-play"></i> video</button>
+              <button type="button " class="btn btn-secondary c-btn2"><i class="fa-solid fa-handshake"></i> Rent
+                now</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="card shadow-lg card1 mb-3" style="width: 100% ;background: linear-gradient(to top, #d8163b2e, white);">
+      <div class="row flex-wrap-reverse  g-0">
+
+        <div class="col-lg-8  col-sm-12">
+          <div class="card-body  d-flex flex-column h-100 justify-content-between py-5 " style="border-radius: 20px;">
+
+            <div class="up">
+              <h3 class="card-title " style="color: #d8163b; ">Unleash the Beast: Rent the Dodge Hellcat at Jimmy Rent
+              </h3>
+              <p class=""><i class="fa-solid fa-calendar-days"></i> sat-oct 7th 2023</p>
+
+              <div class="progress bg-transparent my-3 " style="height: 0.5rem;">
+                <div class="progress-bar prog " role="progressbar"
+                  style="width: 10% ;background-color: #d8163b !important;" aria-valuenow="10" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+
+              <p class="card-text text  " style="font-size: 16px; ">The Dodge Hellcat is a
+                powerhouse muscle car featuring a 6.2L supercharged V8 engine, producing 717 HP and
+                650 lb-ft of torque. It offers a thrilling driving experience with advanced technology
+                and a striking design. Equipped with advanced features like launch control, adaptive suspension, and a
+                high-performance braking system,
+                the Hellcat offers a thrilling and controlled driving experience.
+
+                Available for rent at Jimmy Rent, the Hellcat combines performance,
+                style, and comfort for an unforgettable ride.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+
+            <div class="bouttom d-flex    ">
+              <button type="button" class="btn btn-secondary "><i class="fa-regular fa-hand-peace "></i> vectory
+              </button>
+              <button type="button" class="btn btn-secondary mx-2"><i class="fa-solid fa-play"></i> video</button>
+              <button type="button " class="btn btn-secondary c-btn3"><i class="fa-solid fa-handshake"></i> Rent
+                now</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4 news-img2 col-sm-12 overflow-hidden ">
+          <img src="images/helcat.png" class="img-fluid w-100 h-100 rounded-end" style="transition: all 0.5s;"
+            alt="...">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="card card1 card2 mb-3 shadow-lg"
+      style="width: 100%;background: linear-gradient(to top, #f1cf3d4f , white);">
+      <div class="row   g-0">
+        <div class="col-lg-4 news-img3 overflow-hidden col-sm-12 ">
+
+          <img src="images/supra.png" class="img-fluid  w-100 h-100 rounded-end" alt="...">
+
+        </div>
+        <div class="col-lg-8  col-sm-12">
+          <div class="card-body  d-flex flex-column h-100 justify-content-between py-5 " style="border-radius: 20px;">
+
+            <div class="up">
+              <h3 class="card-title " style="color: #f1cf3d; "> Rent the Iconic Toyota Supra at Jimmy Rent </h3>
+              <p class=""><i class="fa-solid fa-calendar-days"></i> sat-oct 7th 2023</p>
+
+              <div class="progress bg-transparent my-3 " style="height: 0.5rem;">
+                <div class="progress-bar prog " role="progressbar"
+                  style="width: 10% ;background-color: #f1cf3d !important" aria-valuenow="10" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+
+              <p class="card-text text  " style="font-size: 16px; ">The Toyota Supra is a high-performance sports
+                car featuring a 3.0L turbocharged engine, delivering 382 HP and 368 lb-ft of torque. It offers a
+                thrilling driving experience with advanced technology and a sleek design. Available for rent at Jimmy
+                Rent,
+                the Supra combines performance, style, and comfort for an unforgettable ride..</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+
+            <div class="bouttom d-flex    ">
+              <button type="button" class="btn btn-secondary "><i class="fa-regular fa-hand-peace "></i> vectory
+              </button>
+              <button type="button" class="btn btn-secondary mx-2"><i class="fa-solid fa-play"></i> video</button>
+              <button type="button " class="btn btn-secondary c-btn4"><i class="fa-solid fa-handshake"></i> Rent
+                now</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 p-3">
+    <h2 class="text-center my-5 text-capitalize">Join us</h2>
+    <div class="container ">
+      <div class="row px-4">
+        <div class="col-md-3 col-sm-12 mb-3  ">
+          <div class="w-75 mx-auto c-logo border border-2 shadow-lg rounded-3 ">
+            <h5 class="text-center  my-3 text-capitalize"> vectory </h5>
+            <div class="w-50 mx-auto "><img src="images/vectoryclub.png " class="img-fluid shadow-lg rounded-circle "
+                alt="" srcset=""></div>
+            <h5 class="my-3 text-center "><a href="">go to link</a>  </h5>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 mb-3  ">
+          <div class="w-75 mx-auto  border border-2 shadow-lg rounded-3 ">
+            <h5 class="text-center my-3 text-capitalize">Volkswagen</h5>
+            <div class="w-50 mx-auto "><img src="images/Volkswagen.png " class="img-fluid shadow-lg rounded-circle "
+                alt="" srcset=""></div>
+            <h5 class="my-3 text-center "> <a href="">go to link</a>  </h5>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 mb-3  ">
+          <div class="w-75 mx-auto c-logo border border-2 shadow-lg rounded-3 ">
+            <h5 class="text-center my-3 text-capitalize ">BMW </h5>
+            <div class="w-50 mx-auto "><img src="images/BMWlogo.png " class="img-fluid shadow-lg rounded-circle " alt=""
+                srcset=""></div>
+            <h5 class="my-3 text-center "><a href="">go to link</a>  </h5>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 mb-3  ">
+          <div class="w-75 mx-auto c-logo border border-2 shadow-lg rounded-3 ">
+            <h5 class="text-center my-3 text-capitalize">toyota </h5>
+            <div class="w-50 mx-auto "><img src="images/toyota.png " class="img-fluid shadow-lg rounded-circle " alt=""
+                srcset=""></div>
+            <h5 class="my-3 text-center "><a href="">go to link</a>  </h5>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer class="container-fluid bg-light px-0">
+    <div class="container-fluid px-0">
+      <div class="row container-fluid mt-5 px-0 py-4">
+        <div class="col-md-4 col-sm-12 ">
+          <hr>
+          <div class="container-fluid mx-auto d-flex justify-content-center align-items-center ">
+            <img src="images/jimmyrentlogo2.png" class="d-block rounded-circle " width="100px" height="100px" alt=""
+              srcset="">
+            <h3 class="text-black mx-2 text-capitalize">contact us</h3>
+          </div>
+          <hr>
+          <div class="text-center mx-auto">
+            <h6 class="py-2 text-black "> tel +970 567352090</h6>
+            <h6 class="py-2 text-black "> Adress Gaza</h6>
+            <h6 class="py-2 text-black "> Gmail : jameelgeneral2004@gmail.com</h6>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-12 ">
+          <hr>
+          <div class="container-fluid mx-auto d-flex justify-content-center align-items-center ">
+            <img src="images/jimmyrentlogo2.png" class="d-block rounded-circle " width="100px" height="100px" alt=""
+              srcset="">
+            <h3 class="text-black mx-2 text-capitalize">links</h3>
+          </div>
+          <hr>
+          <div class="text-center mx-auto">
+            <h6 class="py-2  "><a href="#" class=""> Car showrooms </a></h6>
+            <h6 class="py-2  "><a href="#" class=""> Vectory club</a></h6>
+            <h6 class="py-2  "><a href="#" class=""> supercars.com </a></h6>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-12 ">
+          <hr>
+          <div class="container-fluid mx-auto d-flex justify-content-center align-items-center ">
+            <img src="images/jimmyrentlogo2.png" class="d-block rounded-circle " width="100px" height="100px" alt=""
+              srcset="">
+            <h3 class="text-black mx-2 text-capitalize">Vison</h3>
+          </div>
+          <hr>
+          <div class="text-center mx-auto">
+            <h6 class="py-2 text-black "> Customer-Centric Experience</h6>
+            <h6 class="py-2 text-black "> Innovation and Technology</h6>
+            <h6 class="py-2 text-black ">Sustainability and Environmental Responsibility</h6>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+   
+    
+  </footer>
+  <!-- تجارب الكارد  -->
+  <!-- <div class="container " >
+      <div class="row">
+        <div class="card bg-dark text-white col-md-4 person " style="">
+          <img src="images/abuarab.png" class="card-img  person" alt="...">
+          <div class="card-img-overlay p-3 pb-4 d-flex flex-column justify-content-between  z-1 w-100 h-100 per "
+            style="background: linear-gradient(to bottom, rgba(17, 23, 48, 0.707), rgba(99, 98, 98, 0.7)); border-radius: 20px;">
+    
+            <div class="container text-white mt-3 p-4 ">
+              <h4 class="">All thanks for Abu 3rab</h4>
+              <span><i class="fa-regular fa-clock"></i> OCT 7,10,2023</span>
+            </div>
+            <div class="container">
+              <img src="images/abuarab.png" width="120rem" class="rounded-circle border border-3   " height="170rem"
+                alt="soryy">
+              <p class="text-white">Abu 3rab <br>
+                Desert Eagle 4x4 </p>
+            </div>
+    
+          </div>
+        </div>
+
+        <div class="card bg-dark text-white col-md-4 person " style="">
+          <img src="images/abuarab.png" class="card-img  person" alt="...">
+          <div class="card-img-overlay p-3 pb-4 d-flex flex-column justify-content-between  z-1  h-100 per "
+            style="background: linear-gradient(to bottom, rgba(17, 23, 48, 0.707), rgba(99, 98, 98, 0.7)); border-radius: 20px;">
+    
+            <div class="container text-white mt-3 p-4 ">
+              <h4 class="">All thanks for Abu 3rab</h4>
+              <span><i class="fa-regular fa-clock"></i> OCT 7,10,2023</span>
+            </div>
+            <div class="container">
+              <img src="images/abuarab.png" width="120rem" class="rounded-circle border border-3   " height="170rem"
+                alt="soryy">
+              <p class="text-white">Abu 3rab <br>
+                Desert Eagle 4x4 </p>
+            </div>
+    
+          </div>
+        </div>
+        
+        <div class="card bg-dark text-white col-md-4 person " style="">
+          <img src="images/abuarab.png" class="card-img w-100 person" alt="...">
+          <div class="card-img-overlay p-3 pb-4 d-flex flex-column justify-content-between  z-1 w-100 h-100 per "
+            style="background: linear-gradient(to bottom, rgba(17, 23, 48, 0.707), rgba(99, 98, 98, 0.7)); border-radius: 20px;">
+    
+            <div class="container text-white mt-3 p-4 ">
+              <h4 class="">All thanks for Abu 3rab</h4>
+              <span><i class="fa-regular fa-clock"></i> OCT 7,10,2023</span>
+            </div>
+            <div class="container">
+              <img src="images/abuarab.png" width="120rem" class="rounded-circle border border-3   " height="170rem"
+                alt="soryy">
+              <p class="text-white">Abu 3rab <br>
+                Desert Eagle 4x4 </p>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+
+        
+    </div> -->
+
+
+
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('.tt'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('.po'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+
+    // document.addEventListener('DOMContentLoaded', function () {
+    //   var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    //   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+
+    //   popoverTriggerList.forEach(function (popoverTriggerEl) {
+    //     new bootstrap.Popover(popoverTriggerEl);
+    //   });
+
+    //   tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+    //     new bootstrap.Tooltip(tooltipTriggerEl);
+    //   });
+    // });
+    // document.addEventListener('DOMContentLoaded', function () {
+    //   var popoverTrigger = document.querySelector('#popoverTooltip');
+    //   var tooltipTrigger = document.querySelector('#popoverTooltip');
+
+    //   var popover = new bootstrap.Popover(popoverTrigger);
+    //   var tooltip = new bootstrap.Tooltip(tooltipTrigger);
+    // });
+    // document.addEventListener('DOMContentLoaded', function () {
+    //       var popoverTrigger = document.getElementById('popoverTooltip');
+
+    //       var popover = new bootstrap.Popover(popoverTrigger);
+    //       var tooltip = new bootstrap.Tooltip(popoverTrigger);
+    //     });
+
+
+  </script>
+
+  <!-- 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>
